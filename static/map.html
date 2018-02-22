@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <style>
+      #map {
+        height: 800px;
+        width: 100%;
+       }
+    </style>
+  </head>
+  <body>
+    <h3>From Software HQ</h3>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var jap = {lat: 35.673354, lng: 139.662298};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 6,
+          center: jap
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAY28H7mz8jS1b2gpA0id8hU7ModnflI4Y&callback=initMap">
+    </script>
+    <a href="http://localhost:3000/form">Link to the past</a>
+  </body>
+</html>
